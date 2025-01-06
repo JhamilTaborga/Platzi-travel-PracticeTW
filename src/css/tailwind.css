@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card {
+    @apply w-48 h-64 shadow-md rounded-lg flex-none transform transition-all hover:-translate-y-4 hover:shadow-xl
+}
+.card-image {
+    @apply w-full h-3/5 rounded-t-lg bg-cover bg-center
+}
+.card-info {
+    @apply w-full h-2/5 bg-secundary rounded-b-lg flex flex-col items-center justify-center dark:bg-gray-700
+}
+.card-info--title {
+    @apply text-white text-xl font-semibold
+}
+.card-info--subtitle {
+    @apply text-white text-sm
+}
+.card:nth-child(even) .card-info {
+    @apply bg-white dark:bg-gray-800
+}
+.card:nth-child(even) .card-info--title,
+.card:nth-child(even) .card-info--subtitle {
+    @apply text-terciary dark:text-white
+}
+.card-destacadas-title {
+    @apply text-3xl px-8 pt-20 pb-1 font-bold text-white
+}
